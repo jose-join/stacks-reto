@@ -1,5 +1,4 @@
 (define-map Counters principal uint)
-
 (define-public (count-up)
   (ok (map-set Counters tx-sender (+ (get-count tx-sender) u1)))
 )
